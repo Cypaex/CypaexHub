@@ -1090,7 +1090,7 @@ local dhuser = getgenv().Settings.User
 --         local dhdata = {
 --             dhprem = dhkey
 --         }
---         local dhurl = "http://cypaexhub0.infinityfreeapp.com/keys.php" -- Exc : https://rizz.xyz/premium.php
+--         local dhurl = "https://janeq.space/others/keya.php" -- Exc : https://rizz.xyz/premium.php
 --         local dhheaders = {
 --             ["content-type"] = "application/json"
 --         }
