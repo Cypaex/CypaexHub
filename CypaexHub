@@ -1765,7 +1765,7 @@ spawn(function()
             DiamondsCount = 0
             eventnumber = eventnumber + 1
             DiamondsDiamonds = 0
-            FinalFinal = 0sa
+            FinalFinal = 0
         elseif Evcc == 0 or FinalList == 0 then
             EvList = {}
             -- print("done5")
