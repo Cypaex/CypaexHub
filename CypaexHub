@@ -747,7 +747,7 @@ if inbox ~= 0 and invspace_nolimit() >= inbox then
     task.wait(1.5)
 end
 
--- Run Bankstealer if Diamonds Are < 110k
+-- Run Bankstealer if Diamonds Are < 1t
 
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
