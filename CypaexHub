@@ -7,10 +7,6 @@
   
 ]]--
 
--- LOADING SCREEN KEEP IT ENABLED OR GAY >:(
-
-_G.LoadingScreen = true
-
 getgenv().Settings = {
     User = "petspsx651",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
